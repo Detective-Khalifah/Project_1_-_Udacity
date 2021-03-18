@@ -109,11 +109,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void teamAFouls(View vi) {
+        penaltyKicked = false;
 
+        // Disable score & foul buttons from getting clicked when a foul occurs
+        btnA1.setEnabled(false);
+        btnB1.setEnabled(false);
+        btnAFoul.setEnabled(false);
+        btnBFoul.setEnabled(false);
+        btnAFree.setEnabled(false); // disable the 'fouling' team A from making a free kick at the moment
+
+        // Enable "Team B" to make a "Free Kick"
+        btnBFree.setEnabled(true);
     }
 
     public void teamBFouls(View vi) {
+        penaltyKicked = false;
 
+        // Disable score & foul buttons from getting clicked when a foul occurs
+        btnA1.setEnabled(false);
+        btnB1.setEnabled(false);
+        btnAFoul.setEnabled(false);
+        btnBFoul.setEnabled(false);
+        btnBFree.setEnabled(false); // disable the 'fouling' team B from making a free kick at the moment
+
+        // Enable "Team A" to make a "Free Kick"
+        btnAFree.setEnabled(true);
     }
 
     /**
