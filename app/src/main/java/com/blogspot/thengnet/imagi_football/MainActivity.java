@@ -25,42 +25,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 2 points.
-     */
-    public void addTwoForTeamA (View view) {
-        scoreTeamA += 2;
-        displayForTeamA();
-    }
-
-    /**
-     * Increase the score for Team A by 3 points.
-     */
-    public void addThreeForTeamA (View view) {
-        scoreTeamA += 3;
-        displayForTeamA();
-    }
-
-    /**
      * Displays the given @param score for Team B.
      */
     public void addOneForTeamB (View view) {
         scoreTeamB++;
-        displayForTeamB();
-    }
-
-    /**
-     * Displays the given @param score for Team B.
-     */
-    public void addTwoForTeamB (View view) {
-        scoreTeamB += 2;
-        displayForTeamB();
-    }
-
-    /**
-     * Displays the given @param score for Team B.
-     */
-    public void addThreeForTeamB (View view) {
-        scoreTeamB += 3;
         displayForTeamB();
     }
 
