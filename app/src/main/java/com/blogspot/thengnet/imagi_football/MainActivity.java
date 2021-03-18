@@ -165,5 +165,15 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         displayForTeamA();
         displayForTeamB();
+
+        // Enable "Team A"'s buttons
+        btnA1.setEnabled(true);
+        btnAFree.setEnabled(true);
+        btnAFoul.setEnabled(true);
+
+        // Enable "Team B"'s buttons
+        btnB1.setEnabled(true);
+        btnBFree.setEnabled(true);
+        btnBFoul.setEnabled(true);
     }
 }
