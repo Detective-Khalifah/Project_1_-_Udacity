@@ -55,10 +55,13 @@ public class MainActivity extends AppCompatActivity {
      * the @param vi #freeKickForTeamA button
      */
     public void freeKickForTeamA(View vi) {
-        penaltyKicked = true;
-
+        boolean freeKickWinned = false;
         Random freeForA = new Random();
-        boolean freeKickWinned = freeForA.nextBoolean();
+
+        while (!penaltyKicked) {
+            freeKickWinned = freeForA.nextBoolean();
+            penaltyKicked = true;
+        }
 
         if (freeKickWinned) {
             // Display Team A's current score after the free kick
@@ -81,10 +84,13 @@ public class MainActivity extends AppCompatActivity {
      * the @param vi #freeKickForTeamB button
      */
     public void freeKickForTeamB(View vi) {
-        penaltyKicked = true;
-
+        boolean freeKickWinned = false;
         Random freeForB = new Random();
-        boolean freeKickWinned = freeForB.nextBoolean();
+
+        while (!penaltyKicked) {
+            freeKickWinned = freeForB.nextBoolean();
+            penaltyKicked = true;
+        }
 
         if (freeKickWinned) {
             // Display Team B's current score after the free kick
