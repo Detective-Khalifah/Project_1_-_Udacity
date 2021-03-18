@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Generate a random boolean value to determine if "Team A" scores +1 point after the free kick
-     * then enable all buttons with exception of the "Free Kick" buttons.
+     * then enable all buttons with exception of the "Free Kick" buttons -- until another foul occurs.
      * the @param vi #freeKickForTeamA button
      */
     public void freeKickForTeamA(View vi) {
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Generate a random boolean value to determine if "Team B" scores +1 point after the free kick
-     * then enable all buttons with exception of the "Free Kick" buttons.
+     * then enable all buttons with exception of the "Free Kick" buttons -- until another foul occurs.
      * the @param vi #freeKickForTeamB button
      */
     public void freeKickForTeamB(View vi) {
