@@ -32,6 +32,22 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB();
     }
 
+    public void freeKickForTeamA(View vi) {
+
+    }
+
+    public void freeKickForTeamB(View vi) {
+
+    }
+
+    public void teamAFouls(View vi) {
+
+    }
+
+    public void teamBFouls(View vi) {
+
+    }
+
     /**
      * Displays the given @param score for Team A.
      */
