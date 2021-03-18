@@ -108,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Disable all buttons except the opponent team B's "Free Kick" when team A makes a foul
+     * @param vi "Team A's" foul button
+     */
     public void teamAFouls(View vi) {
         penaltyKicked = false;
 
@@ -122,6 +126,10 @@ public class MainActivity extends AppCompatActivity {
         btnBFree.setEnabled(true);
     }
 
+    /**
+     * Disable all buttons except the opponent team A's "Free Kick" when team B makes a foul
+     * @param vi "Team B's" foul button
+     */
     public void teamBFouls(View vi) {
         penaltyKicked = false;
 
