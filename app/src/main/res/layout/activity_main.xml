@@ -2,8 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/football_pitch_penal">
 
+    <!-- Photo by <a href="https://unsplash.com/@jaspergarrattphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jasper Garratt</a> on <a href="/photos/I9HyW30buuQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
     <!-- Some detail on football rules: https://www.bbc.co.uk/bitesize/guides/zqvf39q/revision/3 -->
 
     <LinearLayout
