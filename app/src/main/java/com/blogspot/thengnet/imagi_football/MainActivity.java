@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 1 point.
+     * Increase the score for Team A by 1 point, and display the new score
      */
     public void addOneForTeamA (View view) {
         scoreTeamA++;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given @param score for Team B.
+     * Displays the given @param score for Team B, and display the new score
      */
     public void addOneForTeamB (View view) {
         scoreTeamB++;
@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
         boolean freeKickWinned = freeForA.nextBoolean();
 
         if (freeKickWinned) {
-            scoreTeamA++;
+            // Display Team A's current score after the free kick
+            addOneForTeamA(vi);
         }
 
         btnA1.setEnabled(true);
@@ -72,9 +73,6 @@ public class MainActivity extends AppCompatActivity {
         // Disable the "Free Kick" buttons from being clicked
         btnAFree.setEnabled(false);
         btnBFree.setEnabled(false);
-
-        // Display Team A's current score after the free kick
-        displayForTeamA();
     }
 
     /**
@@ -89,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
         boolean freeKickWinned = freeForB.nextBoolean();
 
         if (freeKickWinned) {
-            scoreTeamB++;
+            // Display Team B's current score after the free kick
+            addOneForTeamB(vi);
         }
 
         btnA1.setEnabled(true);
@@ -101,8 +100,6 @@ public class MainActivity extends AppCompatActivity {
         btnAFree.setEnabled(false);
         btnBFree.setEnabled(false);
 
-        // Display Team A's current score after the free kick
-        displayForTeamA();
     }
 
     public void teamAFouls(View vi) {
